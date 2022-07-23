@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .card {
+        background-color: beige;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .card-title {
+        margin: 0;
+        margin-bottom: 18px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+        margin: 10px;
+      }
+
+      .flex-box-example {
+        margin: 100px;
+        background-color: cadetblue;
+        /* width: fit-content; */
+        padding: 10px;
+
+        /* Flexbox */
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+      }
+
+      .header p {
+        color: #fff;
+      }
+
+      .navigation-menu {
+        margin-left: 20px;
+      }
+
+      .navigation-menu > p {
+        margin-left: 10px;
+      }
+
+      .account > p {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header flex">
+      <!-- Wrapper 1 -->
+      <div class="flex">
+        <!-- Logo -->
+        <p>LOGO</p>
+
+        <!-- Navigation Menu -->
+        <div class="navigation-menu flex">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+      </div>
+
+      <div class="account flex">
+        <p>Login</p>
+        <p>Sign Up</p>
+      </div>
+    </header>
+
+    <!-- Card Student 1 -->
+    <div class="flex-box-example">
+      <div class="card">
+        <h3 id="card-title">Student Card</h3>
+        <p>Nama: Person 1</p>
+        <p>NIM: 10116071</p>
+        <p>Kelas: D3IF-41-01</p>
+      </div>
+
+      <!-- Card Student 2 -->
+      <div id="card2" class="card">
+        <h3 id="card-title">Student Card</h3>
+        <p>Nama: Person 2</p>
+        <p>NIM: 12321323</p>
+        <p>Kelas: 01Tp</p>
+      </div>
+    </div>
+
+    <div class="flex-box-example">
+      <div class="flex">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
